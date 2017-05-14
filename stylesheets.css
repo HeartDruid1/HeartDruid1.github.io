@@ -1,0 +1,38 @@
+			
+h1 {
+	font-family: 'Rubik', sans-serif, 500i;
+	font-size: 480%;
+	color:lawngreen;
+	}
+h2 {
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 260%;
+	color:lawngreen;
+	}
+h3 {
+	font-family: font-family: 'Nunito Sans', sans-serif;
+	font-size: 110%;
+	color:lawngreen;
+}
+p {
+	font-family: font-family: 'Nunito Sans', sans-serif;
+	color:white;
+}
+a {
+	color:lawngreen;
+	font-family: 'Nunito Sans', sans-serif;
+	}
+hr {
+	color:lawngreen;
+	font-size: 0;
+	border: 0;
+	height: 1px;
+	background: lawngreen;
+	width: 50%;
+	}
+footer {
+	color:white;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 100%;
+	}
+			
