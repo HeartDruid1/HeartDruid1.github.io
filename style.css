@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "League Spartan";
+  src: url("fonts/LeagueSpartan-Bold.otf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ostrich Sans Inline";
+  src: url("fonts/OstrichSansInline-Regular.otf");
+}
+
+body {
+  margin: 0;
+  background-image: url("images/ep_naturalwhite.png");
+  background-position: right bottom;
+}
+
+h1.title {
+  text-align: center;
+  color: #DD2B41;
+  font-family: "League Spartan", sans-serif;
+  font-style: italic;
+  text-decoration: none;
+  font-size: 440%;
+}
+
+hr {
+  height: 1px;
+  color: black;
+  background-color: black;
+  border: none;
+  width: 90%;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  font-family: "Arial";
+  font-style: oblique;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li
+a:hover:not(.active)
+{text-decoration: underline;}
+
+ul.topnav li a.active
+{text-decoration: underline;}
+
+ul.topnav li.right {float:right;}
+
+@media screen and (max-width: 720px){
+  ul.topnav li.right,
+  ul.topnav li {float: none;}
+  img.logo {margin-top: 50px;
+    width: 50%;}
+  h1.title {font-size: 400%}
+  div.homepage {margin: 0px}
+  .links {width: 30%}
+}
+
+div.article{
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: "League Spartan", Arial, sans-serif;
+  color: black;
+}
+
+div.homepage{
+  text-align: left;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: "League Spartan", Arial, sans-serif;
+  color: black;
+  padding-top: 5px;
+}
+
+h6.footer {
+  font-family: "League Spartan";
+  color: black;
+  font-size: 120%;
+  font-style: italic;
+  text-align: center;
+}
+
+h2.subtitle {
+  color: black;
+  text-align: center;
+  font-family: "Ostrich Sans Inline";
+}
+
+img.logo {
+  margin-top: 40px;
+  width: 8%;
+}
+
+.homepageTitle{
+  font-family: "Ostrich Sans Inline";
+  text-align: center;
+  font-size: 440%;
+  margin-top: 50px;
+}
+
+.links{
+  float: none;
+  align-items: center;
+  padding: 10px;
+  width: 20%;
+}
