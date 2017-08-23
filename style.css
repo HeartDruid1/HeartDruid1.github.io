@@ -59,22 +59,24 @@ div h2 {
 }
 
 div h2.subtitle {
-	color: white
+	color: white;
 }
 
 div p {
 	text-align: left;
 	color: white;
 	font-family: Arial;
-	padding-top: 4px;
+	padding-top: none;
 	margin: 1px;
 }
 
 div h6 {
-	font-family: Arial;
+	font-family: Monospace;
 	padding: none;
 	margin: none;
 	color: white;
+	font-size: 8pt;
+	font-weight: lighter;
 }
 
 div a {
