@@ -8,7 +8,7 @@ body {
 h1.title {
 	font-family: Arial, sans-serif;
 	text-align: left;
-	color: green;
+	color: aqua;
 	font-weight: lighter;
 }
 
@@ -44,7 +44,7 @@ a.active {
 h2.title {
 	padding-top: 6px;
 	text-align: center;
-	color: green;
+	color: aqua;
 	font-family: Arial;
 	font-weight: lighter;
 }
@@ -52,7 +52,7 @@ h2.title {
 div h2 {
 	padding-top: 2px;
 	text-align: left;
-	color: green;
+	color: aqua;
 	font-family: Arial;
 	margin: none;
 	font-weight: lighter;
