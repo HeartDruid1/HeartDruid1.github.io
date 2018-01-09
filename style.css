@@ -36,6 +36,10 @@ li a:hover {
 	background-color: #111;
 }
 
+li a.active {
+	background-color: blue;
+}
+
 a.links {
 	display: block;
 	padding: 8px;
