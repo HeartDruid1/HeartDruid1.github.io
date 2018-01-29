@@ -28,7 +28,11 @@ h1.title {
 	color: #dc143c;
 }
 
-ul {
+h1.title:hover {
+	text-shadow: 3px 3px black;
+}
+
+ul.nav-bar {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -36,11 +40,11 @@ ul {
 	background-color: #333;
 }
 
-li {
+li.nav-bar{
 	float: left;
 }
 
-li a {
+li a.nav-bar {
 	display: block;
 	color: white;
 	font-family: Monospace;
@@ -49,12 +53,13 @@ li a {
 	text-decoration: none;
 }
 
-li a:hover {
+li a.nav-bar:hover {
 	background-color: #111;
 }
 
 li a.active {
 	background-color: #dc143c;
+	pointer-events:none;
 }
 
 a.links {
