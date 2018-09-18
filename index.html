@@ -1,0 +1,45 @@
+---
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HeartDruid1</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="rebuild-styles.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="row">
+				<div class="left-column"> <!-- nav bar that hangs to the left (float left?) -->
+				<h1 class="header">HeartDruid1</h1>
+				<hr/>
+				<div class="hamburger">
+					<ul class="nav-bar">
+						<li><a>Home</a></li>
+						<li><a>About</a></li>
+						<li><a>Projects</a></li>
+						<li><a>Blog</a></li>
+					</ul>
+				</div>
+				<hr/>
+				<div> <!-- social links -->
+					<ul class="social-links">
+						<li class="social-link"><a href="https://github.com/HeartDruid1"><i class="fab fa-github" color="black"></i></a></li>
+						<li class="social-link"><a href="feedback.html"><i class="fas fa-paperclip"></i></a></li>
+						<li class="social-link"><a href="https://github.com/HeartDruid1"><i class="fas fa-at"></i></a></li>
+
+					</ul>
+				</div>
+			</div>
+			<div class="right-column">
+				{% for post in site.posts %}
+				<a class="article-link" href="{{post.url}}">
+					<div class="content-bar" style="background-image: url('{{post.background}}')">
+						<h2>{{ post.title }}</h2>
+				</a>
+				{% endfor %}
+					</div>
+			</div>
+		</div>
+	</body>
+</html>
