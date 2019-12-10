@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'League Spartan';
+    src: url('leaguespartan-bold.eot');
+    src: url('leaguespartan-bold.eot?#iefix') format('embedded-opentype'),
+         url('leaguespartan-bold.woff2') format('woff2'),
+         url('leaguespartan-bold.woff') format('woff'),
+         url('leaguespartan-bold.ttf') format('truetype'),
+         url('leaguespartan-bold.svg#league_spartanbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url('Roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+
+body {
+  background-image: url("ep_naturalwhite.png");
+  background-repeat: repeat;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar Styling */
+
+header {
+    margin: 0px;
+    padding: 0px;
+    display: inline;
+}
+
+h1.name {
+  padding: 10%;
+  padding-left: 0;
+  padding-bottom: 0;
+  text-align: center;
+  font-family: "League Spartan", sans-serif;
+  font-style: italic;
+  font-size: 3em;
+  color: #DC143C;
+}
+
+h1.name:hover {
+  text-shadow: 3px 3px black;
+}
+
+a.hamburger {
+  display: none;
+}
+
+ul.nav-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.nav-items li {
+  text-decoration: none;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+}
+/* Styling for the layout of the page itself */
+
+div#wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.nav-bar {
+  padding: 0;
+  width: 25%;
+  float: left;
+}
+
+ul.nav-items {
+    padding-left: 2em;
+}
+
+div.content-menu {
+  padding: 0;
+  width: 70%;
+  margin-left: 10px;
+    display: block;
+    float: left;
+}
+
+div.about-me {
+  font-family: monospace;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 3%;
+  padding-bottom: 15%;
+}
+
+#info {
+    padding: 0em;
+    margin-top: 2em;
+    font-size: 1.5em;
+    
+}
+
+#blurb {
+    padding: 0em;
+    margin-top: 2em;
+    font-family: "Roboto", sans-serif;
+    font-size: 3em;
+}
+
+@media only screen and (max-width: 1000px) {
+  div.nav-bar {
+    display: block;
+    width: 100%;
+      margin-top: 1em;
+  }
+
+  ul.nav-items {
+    display: none;
+  }
+
+  h1.name {
+    display: inline;
+    font-size: 2.5em;
+  }
+
+    div.content-menu {
+        margin: 0px;
+    }
+    
+  a.hamburger {
+    display: inline;
+    text-decoration: none;
+    color: #000000;
+    text-align: right;
+    float: right;
+    padding-right: 1em;
+  }
+    #blurb {
+        margin-top: 1em;
+    }
+}
