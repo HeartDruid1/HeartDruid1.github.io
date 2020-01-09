@@ -16,6 +16,15 @@
   src: url('Roboto/Roboto-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: "Roboto Bold Italic";
+  src: url('Roboto/Roboto-BoldItalic.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: "Raleway";
+    src: url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+}
 
 body {
   background-image: url("ep_naturalwhite.png");
@@ -76,13 +85,14 @@ div.nav-bar {
   padding: 0;
   width: 25%;
   float: left;
+  margin-right: 0.7em;
 }
 
 ul.nav-items {
     padding-left: 2em;
 }
 
-div.content-menu {
+div.second-column {
   padding: 0;
   width: 70%;
   margin-left: 10px;
@@ -102,7 +112,6 @@ div.about-me {
     padding: 0em;
     margin-top: 2em;
     font-size: 1.5em;
-    
 }
 
 #blurb {
@@ -112,7 +121,68 @@ div.about-me {
     font-size: 3em;
 }
 
-@media only screen and (max-width: 1000px) {
+#articleListing {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 3%;
+    padding-bottom: 15%;
+    margin-top: 2.5em;
+    font-family: "Roboto Bold Italic", sans-serif;
+    font-size: 2.5em;
+    width: 100%;
+    
+}
+
+a.clickyBoi {
+    text-decoration: none;
+    color: #000;
+    margin: 1.5em 0;
+}
+
+div.linkWrapper {
+    width: 100%;
+    
+}
+
+div.linkWrapper::before{
+    content: "> ";
+}
+
+#metadata {
+  font-family: "Roboto Bold Italic", sans-serif;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 3%;
+    margin-top: 5em;
+}
+
+#metadata h1
+{
+    padding: 0;
+    margin: 0;
+}
+#metadata h1::before {
+    content: "> "
+}
+
+#metadata h5 {
+    padding: 0;
+    margin: 0;
+    font-size: 1.4em;
+}
+
+#valuableContent {
+    padding: 0em;
+    margin-top: 0;
+    font-size: 1.5em;
+    font-family: Helvetica, sans-serif;
+}
+
+#valuableContent p::first-line {
+    text-indent: 1em;
+}
+
+@media only screen and (max-width: 1050px) {
   div.nav-bar {
     display: block;
     width: 100%;
@@ -128,8 +198,9 @@ div.about-me {
     font-size: 2.5em;
   }
 
-    div.content-menu {
+    div.second-column {
         margin: 0px;
+        width: 80%;
     }
     
   a.hamburger {
@@ -140,7 +211,22 @@ div.about-me {
     float: right;
     padding-right: 1em;
   }
+    a.hamburger:
     #blurb {
         margin-top: 1em;
+    }
+    #articleListing {
+        margin-top: 1em;
+    }
+    #metadata {
+        margin-top: 1em;
+    }
+    
+    #valuableContent {
+    padding: 0em;
+    margin-top: 0;
+    font-size: 1.3em;
+    font-family: Helvetica, sans-serif;
+    width: 110%;
     }
 }
